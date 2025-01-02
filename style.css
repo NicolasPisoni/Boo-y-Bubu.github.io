@@ -1,0 +1,182 @@
+@media only screen and (max-width: 480px) {
+    /* Estilos para pantallas pequeñas */
+  }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para pantallas medianas */
+  }
+  @media only screen and (min-width: 769px) {
+    /* Estilos para pantallas grandes */
+  }
+.container {
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1200px; /* Máximo de 1200px para pantallas grandes */
+}
+body {
+    background-image: url('IMG/fondo\ corazones.jpg');
+}
+li {
+    display: inline;
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: palevioletred;
+  }
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #212529;
+    padding: 10px 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  .navbar {
+  background-color: #212529;
+  border-bottom: 1px solid #212529;
+  padding: 10px 0;
+  }
+  
+  .navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  }
+  
+  .navbar ul li {
+  margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  }
+  
+  .navbar ul li a:hover {
+  color: #ffee93; /* Cambia el color al pasar el cursor */
+  } 
+  .img-inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  img {
+    width: 350px;
+    height: 500px;
+    border-radius: 5%;
+  }
+  .nosotros-historia {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+  }
+  .texto_nosotros {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+  }
+  .recuerdos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    grid-template-rows: repeat(3, auto); /* Limita a dos filas */
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .img-recuerdos {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+.recuerdos{
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 50%;
+    width: auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .month {
+    background-color: #fff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .month h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #8e8bc4;
+  }
+  .days {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .days span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+  .highlight {
+    color: #fff;
+    background-color: #9f89f8;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .highlight-relacion {
+    color: #fff;
+    background-color: goldenrod;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .highlight-cumpleaños {
+    color: #fff;
+    background-color: pink;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .highlight-reencuentros {
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 70%;
+    border: 2px solid #dcdcdc;
+  }
