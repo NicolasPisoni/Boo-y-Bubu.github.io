@@ -1,12 +1,43 @@
-@media only screen and (max-width: 480px) {
-    /* Estilos para pantallas pequeñas */
-  }
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Estilos para pantallas medianas */
-  }
-  @media only screen and (min-width: 769px) {
-    /* Estilos para pantallas grandes */
-  }
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
 .container {
     width: 90%; /* Ocupa el 90% del ancho de la pantalla */
     max-width: 1200px; /* Máximo de 1200px para pantallas grandes */
