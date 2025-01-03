@@ -40,7 +40,8 @@
 }
 .container {
     width: 90%; /* Ocupa el 90% del ancho de la pantalla */
-    max-width: 1200px; /* Máximo de 1200px para pantallas grandes */
+    min-width: 768px;
+    max-width: 990px;
 }
 body {
     background-image: url('IMG/fondo\ corazones.jpg');
