@@ -147,7 +147,7 @@ li {
 
 .calendar-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se adapta automáticamente */
     gap: 20px;
     height: 50%;
     width: auto;
@@ -206,8 +206,8 @@ li {
     margin-bottom: 20px;
   }
   .photos img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 70%;
     border: 2px solid #dcdcdc;
