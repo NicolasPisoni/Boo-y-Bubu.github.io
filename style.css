@@ -96,7 +96,7 @@ li {
   } 
   .img-inicio {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Se adapta automáticamente */
     gap: 20px;
     padding: 20px;
     text-align: center;
