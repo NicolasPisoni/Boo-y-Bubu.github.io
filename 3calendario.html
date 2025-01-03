@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="IMG/Corazon Logo.jpg">
     <title>Calendario</title>
@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="0index.html">Inicio</a></li>
                 <li><a href="1nosotros.html">Nosotros</a></li>
                 <li><a href="2recuerdos.html">Recuerdos</a></li>
                 <li><a href="3calendario.html">Calendario</a></li>
@@ -33,7 +33,7 @@
               <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><br>
               <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><br>
               <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><br>
-              <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span class="highlight-relacion">26</span><br>
+              <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span class="highlight" id="date-highlight">26</span><br>
               <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span><br>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <h3>Agosto</h3>
             <div class="days">
               <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span><br>
-              <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span class="highlight-reencuentros">3</span><br>
+              <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span class="highlight" id="date-highlight">3</span><br>
               <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><br>
               <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><br>
               <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><br>
@@ -123,7 +123,7 @@
               <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><br>
               <span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><br>
               <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><br>
-              <span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span class="highlight-cumpleaños">27</span><span>28</span><br>
+              <span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span class="highlight" id="date-highlight">27</span><span>28</span><br>
               <span>29</span><span>30</span><span></span><span></span><span></span><span></span><span></span><br>
             </div>
           </div>
@@ -133,7 +133,7 @@
               <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span><br>
               <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><br>
               <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><br>
-              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span class="highlight-cumpleaños">18</span><span class="highlight-relacion">19</span><br>
+              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span class="highlight" id="date-highlight">18</span><span class="highlight" id="date-highlight">19</span><br>
               <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><br>
               <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span><br>
             </div>
@@ -146,7 +146,7 @@
               <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><br>
               <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><br>
               <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><br>
-              <span class="highlight-reencuentros">24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><br>
+              <span class="highlight" id="date-highlight">24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><br>
               <span>31</span><span></span><span></span><span></span><span></span><span></span><span></span><br>
             </div>
           </div>
@@ -161,8 +161,23 @@
               <span>29</span><span>30</span><span></span><span></span><span></span><span></span><span></span><br>
             </div>
           </div>
-          <!-- Repite para más meses -->
         </div>
     </section>
+    <div id="overlay" class="hidden"></div>
+    <div id="message" class="hidden">
+        <p>❤️Nuestra Fecha de Novios❤️</p>
+        <button onclick="closeMessage()">Cerrar</button>
+    </div>
 </body>
+<script>
+    document.getElementById("date-highlight").addEventListener("click", function () {
+      document.getElementById("overlay").classList.remove("hidden");
+      document.getElementById("message").classList.remove("hidden");
+    });
+  
+    function closeMessage() {
+      document.getElementById("overlay").classList.add("hidden");
+      document.getElementById("message").classList.add("hidden");
+    }
+  </script>
 </html>
