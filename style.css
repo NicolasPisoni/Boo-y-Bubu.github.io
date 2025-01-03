@@ -177,27 +177,23 @@ li {
   }
   .highlight {
     color: #fff;
-    background-color: #9f89f8;
-    border-radius: 50%;
-    padding: 2px;
-  }
-  .highlight-relacion {
-    color: #fff;
     background-color: goldenrod;
     border-radius: 50%;
-    padding: 2px;
+    cursor: pointer; /* Cambia el cursor a pointer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
   }
-  .highlight-cumpleaños {
-    color: #fff;
-    background-color: pink;
-    border-radius: 50%;
-    padding: 2px;
+  
+  /* Animación al hacer hover */
+  .highlight:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Más sombra al pasar el cursor */
   }
-  .highlight-reencuentros {
-    color: #fff;
-    background-color: red;
-    border-radius: 50%;
-    padding: 2px;
+  
+  /* Efecto de clic */
+  .highlight:active {
+    transform: scale(1.1); /* Reducción leve para un efecto de pulsación */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Reducir la sombra */
   }
   .photos {
     display: flex;
@@ -211,4 +207,29 @@ li {
     object-fit: cover;
     border-radius: 70%;
     border: 2px solid #dcdcdc;
+  }
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  #message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .hidden {
+    display: none;
   }
