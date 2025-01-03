@@ -127,8 +127,8 @@ li {
   }
   .recuerdos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
-    grid-template-rows: repeat(3, auto); /* Limita a dos filas */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Se adapta automáticamente */
+    grid-template-rows: repeat(2, auto); /* Limita a dos filas */
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
