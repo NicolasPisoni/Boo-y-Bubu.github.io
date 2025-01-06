@@ -119,8 +119,8 @@ li {
     text-align: center;
   }
   .texto_nosotros {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-family: "Latin Modern Roman";
+    font-style: oblique;
     height: 100%;
     width: 100%;
     text-align: justify;
